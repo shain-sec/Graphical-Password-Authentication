@@ -14,7 +14,7 @@ The system demonstrates concepts related to **user authentication, access contro
 * Jumbled image fragments during authentication
 * Image reconstruction-based verification
 * Authentication validation and access control
-* Invalid login attempt detection
+* Invalid login attempt detection 
 * Login attempt alerts
 
 ## 🔄 Authentication Workflow
