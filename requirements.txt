@@ -1,0 +1,30 @@
+# Project Requirements
+
+# Hardware Requirements
+# Server:
+# Processor: AMD or higher
+# Memory: 8 GB or more
+# Hard Disk: 100 GB or more
+# Network Card: Required
+
+# Client:
+# Processor: Any processor
+# Memory: 512 MB or more
+# Hard Disk: 10 GB or more
+# Network Card: Required
+
+
+# Software Requirements
+# Frontend: ASP.NET / C# / JavaScript
+# Backend: Microsoft SQL Server 2018
+# Operating System: Windows 10 or later
+# Web Server: IIS
+# IDE: Visual Studio 2020
+
+
+# Technology Stack
+ASP.NET
+C#
+JavaScript
+Microsoft SQL Server
+IIS
