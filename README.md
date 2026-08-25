@@ -1,80 +1,114 @@
 # 🔐 Graphical Password Authentication
 
-A **cybersecurity-focused authentication project** developed using **ASP.NET, C#, JavaScript, and Microsoft SQL Server**.
+A web-based **Graphical Password Authentication System** developed as an academic project using **ASP.NET, C#, JavaScript, and Microsoft SQL Server**.
 
-This project explores an alternative to traditional text-based authentication by implementing a **graphical password mechanism**. Instead of entering a conventional password, users authenticate by reconstructing an image from segmented fragments.
+The system provides an alternative to traditional text-based passwords by using an image as a graphical password. During registration, the user's selected image is divided into multiple fragments. During authentication, the fragments are presented in a jumbled order, and the user must reconstruct the original image in the correct sequence.
 
-The system demonstrates concepts related to **user authentication, access control, graphical passwords, and credential security**.
+## 📌 Overview
 
-## 🛡️ Security Features
+Traditional text-based passwords can be vulnerable to password guessing, credential reuse, keylogging, and other attacks. Graphical authentication provides an alternative approach based on visual memory and user interaction.
 
-* User registration and authentication
-* Image-based graphical password mechanism
-* Image segmentation and fragment storage
-* Jumbled image fragments during authentication
-* Image reconstruction-based verification
-* Authentication validation and access control
-* Invalid login attempt detection 
-* Login attempt alerts
+In this system, the user selects an image during registration. The image is divided into multiple segments using coordinate-based image segmentation. The segments are stored according to their original positions.
 
-## 🔄 Authentication Workflow
+During login, the segments are displayed in a jumbled order. The user must arrange the fragments correctly to reconstruct the original image. The system verifies the selected sequence against the original arrangement.
 
-1. The user registers and selects an image as a graphical password.
-2. The system segments the image into multiple fragments.
-3. The fragments and their original arrangement are stored for authentication.
-4. During login, the image fragments are presented in a jumbled order.
-5. The user reconstructs the image by arranging the fragments correctly.
-6. The system verifies the authentication attempt.
-7. Access is granted or denied based on the verification result.
+- ✅ Correct sequence → Authentication successful
+- ❌ Incorrect sequence → Authentication failed
 
-## 🎯 Security Concept
+Repeated failed authentication attempts can trigger login alerts and temporary account blocking.
 
-Traditional authentication systems commonly rely on text-based passwords, which can be vulnerable to attacks such as password guessing and credential compromise.
+## ✨ Features
 
-This project explores **graphical authentication** as an alternative approach where authentication depends on the user's ability to recognize and reconstruct a selected image.
+- User registration and login
+- Image-based graphical password
+- Coordinate-based image segmentation
+- Image fragment storage
+- Randomized/jumbled image fragments
+- Image reconstruction-based authentication
+- Authentication attempt validation
+- Login attempt alerts
+- Temporary login blocking after repeated failures
+- Microsoft SQL Server database integration
 
-The project focuses on demonstrating:
+## 🔄 How It Works
 
-* 🔑 Authentication mechanisms
-* 🛡️ Access control
-* 🖼️ Graphical password security
-* 🔐 Credential protection concepts
-* 🚨 Failed authentication monitoring
+### 1. Registration
+
+The user registers with the system and selects an image to use as a graphical password.
+
+### 2. Image Segmentation
+
+The selected image is divided into multiple fragments using coordinate-based segmentation.
+
+### 3. Fragment Storage
+
+The generated fragments are stored according to their original positions.
+
+### 4. Authentication
+
+During login, the stored fragments are presented in a jumbled order.
+
+### 5. Image Reconstruction
+
+The user arranges the fragments in the correct order to reconstruct the original image.
+
+### 6. Verification
+
+The system compares the user's arrangement with the original fragment sequence.
+
+If the sequence is correct, the user is authenticated. Otherwise, authentication fails.
+
+## 🧩 Functional Modules
+
+### Image Submission Module
+
+Collects user information and the image selected as the graphical password.
+
+### Image Fragmentation Module
+
+Divides the selected image into multiple fragments using coordinate-based segmentation.
+
+### Image Fragment Storage Module
+
+Stores the generated image fragments and their corresponding positions.
+
+### Image Jumbling Module
+
+Randomizes the order of image fragments during authentication.
+
+### Authentication Module
+
+Verifies the user's selected fragment sequence against the original arrangement.
+
+### Alert Module
+
+Handles failed authentication attempts and login attempt alerts.
+
+## 🔑 Authentication Concepts
+
+The project explores multiple graphical authentication approaches, including:
+
+- **Recognition-Based Authentication**
+- **Recall-Based Authentication**
+- **Cued Recall Authentication**
+- **Colour Grade-Based Authentication**
+- **Click-Point Authentication**
+- **Alternating Session Passwords**
 
 ## 🛠️ Technologies Used
 
-* **Frontend:** ASP.NET, JavaScript
-* **Backend:** C#
-* **Database:** Microsoft SQL Server
-* **Development Environment:** Visual Studio
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-* Visual Studio
-* ASP.NET / .NET
-* Microsoft SQL Server
+| Technology | Purpose |
+|---|---|
+| **ASP.NET** | Web application development |
+| **C#** | Application logic and authentication |
+| **JavaScript** | Client-side functionality |
+| **Microsoft SQL Server** | Database management |
+| **IIS** | Web server |
+| **Visual Studio** | Development environment |
 
 ### Installation
 
-```bash id="r85h3t"
+Clone the repository:
+
+```bash
 git clone https://github.com/shain-sec/graphical-password-authentication.git
-cd graphical-password-authentication
-```
-
-Open the project in **Visual Studio**, configure the database connection, and run the application.
-
-## 🎓 Project Purpose
-
-This project was developed as an academic cybersecurity project to explore **graphical password authentication** and alternative authentication mechanisms.
-
-It demonstrates how image-based interaction can be incorporated into an authentication workflow instead of relying solely on conventional text-based passwords.
-
-## 👨‍💻 Author
-
-**Muhammed Shain**
-
-## ⚠️ Disclaimer
-
-This project was developed for **academic and educational purposes**. It demonstrates authentication and graphical password concepts and is not intended to be used as a production-ready security solution without additional security testing and improvements.
