@@ -21,14 +21,12 @@ Repeated failed authentication attempts can trigger login alerts and temporary a
 
 - User registration and login
 - Image-based graphical password
-- Coordinate-based image segmentation
 - Image fragment storage
 - Randomized/jumbled image fragments
 - Image reconstruction-based authentication
 - Authentication attempt validation
 - Login attempt alerts
 - Temporary login blocking after repeated failures
-- Microsoft SQL Server database integration
 
 ## 🔄 How It Works
 
