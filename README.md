@@ -90,8 +90,6 @@ The project explores multiple graphical authentication approaches, including:
 - **Recall-Based Authentication**
 - **Cued Recall Authentication**
 - **Colour Grade-Based Authentication**
-- **Click-Point Authentication**
-- **Alternating Session Passwords**
 
 ## 🛠️ Technologies Used
 
