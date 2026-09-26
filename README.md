@@ -6,7 +6,7 @@ The system provides an alternative to traditional text-based passwords by using 
 
 ## 📌 Overview
 
-Traditional text-based passwords can be vulnerable to password guessing, credential reuse, keylogging, and other attacks. Graphical authentication provides an alternative approach based on visual memory and user interaction.
+Traditional text-based passwords can be vulnerable to password guessing, credential reuse, keylogging, and other attacks. Graphical authentication provides an alternative approach based on visual memory and user interaction. 
 
 In this system, the user selects an image during registration. The image is divided into multiple segments using coordinate-based image segmentation. The segments are stored according to their original positions.
 
